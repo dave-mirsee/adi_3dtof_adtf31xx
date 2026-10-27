@@ -31,7 +31,7 @@ def generate_launch_description():
 
     # Input Sensor IP Address : Applicable only if inpiut sensor mode is 3    
     arg_input_sensor_ip_desc = DeclareLaunchArgument(
-        'arg_input_sensor_ip', default_value="10.43.0.1")
+        'arg_input_sensor_ip', default_value="192.168.56.1")
     
     # Enable RVL compression for depth and ab images
     arg_enable_depth_ab_compression_desc = DeclareLaunchArgument(
@@ -51,7 +51,7 @@ def generate_launch_description():
     
     # Enable Point Cloud image publishing 
     arg_enable_point_cloud_publish_desc = DeclareLaunchArgument(
-        'arg_enable_point_cloud_publish', default_value="False")
+        'arg_enable_point_cloud_publish', default_value="True")
 
     # abThreshold
     arg_ab_threshold_desc = DeclareLaunchArgument(
